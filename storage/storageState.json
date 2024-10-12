@@ -1,0 +1,299 @@
+{
+  "cookies": [
+    {
+      "name": "sururl",
+      "value": "L2Jvb2s=",
+      "domain": "www.rokomari.com",
+      "path": "/",
+      "expires": 1728742782.377966,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "userActTraSerBrowId",
+      "value": "36a8452a-1a9f-48b7-b035-f1d7ee693f7a",
+      "domain": "www.rokomari.com",
+      "path": "/",
+      "expires": 1739110483,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "userActTraSerSessId",
+      "value": "d328a30c-6fa6-4251-9508-bd5cb3e0b3b2",
+      "domain": "www.rokomari.com",
+      "path": "/",
+      "expires": 1728744283,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "CLID",
+      "value": "70192e0d9d32432baaa92b10771e38cc.20241012.20251012",
+      "domain": "www.clarity.ms",
+      "path": "/",
+      "expires": 1760278483.538295,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.2.1718572080.1728742484",
+      "domain": ".rokomari.com",
+      "path": "/",
+      "expires": 1728828884,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gat",
+      "value": "1",
+      "domain": ".rokomari.com",
+      "path": "/",
+      "expires": 1728742543,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_fbp",
+      "value": "fb.1.1728742483598.142811127116677101",
+      "domain": ".rokomari.com",
+      "path": "/",
+      "expires": 1736518486,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.1712945672.1728742484",
+      "domain": ".rokomari.com",
+      "path": "/",
+      "expires": 1736518483,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gat_UA-28456258-1",
+      "value": "1",
+      "domain": ".rokomari.com",
+      "path": "/",
+      "expires": 1728742543,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_clck",
+      "value": "gp3zwz%7C2%7Cfpy%7C0%7C1746",
+      "domain": ".rokomari.com",
+      "path": "/",
+      "expires": 1760278484,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "IDE",
+      "value": "AHWqTUlPLQlEIVAV1guBW9Jxgmwk1DR82Mj8NeUzw8H9Uj3LJemSrH8p-uwCjmJu",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1763302484.498512,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.2.161260832.1728742484",
+      "domain": ".rokomari.com",
+      "path": "/",
+      "expires": 1763302484.756079,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "entryPopup",
+      "value": "true",
+      "domain": "www.rokomari.com",
+      "path": "/",
+      "expires": 1728785685,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "nt_req_con_indx",
+      "value": "[\"nt_all_index\"]",
+      "domain": "www.rokomari.com",
+      "path": "/",
+      "expires": 1729174485,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "nt_pop_shown",
+      "value": "[\"nt_all_pop_shown\"]",
+      "domain": "www.rokomari.com",
+      "path": "/",
+      "expires": 1728744213,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ar_debug",
+      "value": "1",
+      "domain": ".www.google-analytics.com",
+      "path": "/",
+      "expires": 1736518485.274626,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_clsk",
+      "value": "win25x%7C1728742485959%7C1%7C1%7Ca.clarity.ms%2Fcollect",
+      "domain": ".rokomari.com",
+      "path": "/",
+      "expires": 1728828885,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "MUID",
+      "value": "3E11BDB1423F6F912316A8A7433E6E01",
+      "domain": ".bing.com",
+      "path": "/",
+      "expires": 1762438485.983063,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1729347285.983193,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SRM_B",
+      "value": "3E11BDB1423F6F912316A8A7433E6E01",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1762438485.983263,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SM",
+      "value": "C",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MUID",
+      "value": "3E11BDB1423F6F912316A8A7433E6E01",
+      "domain": ".clarity.ms",
+      "path": "/",
+      "expires": 1762438487.107088,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": 1729347287.107171,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ANONCHK",
+      "value": "0",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": 1728743087.107213,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "JSESSIONID",
+      "value": "233A237517F734F3D4831320EFD5AA1A",
+      "domain": "www.rokomari.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "SPRING_SECURITY_REMEMBER_ME_COOKIE",
+      "value": "bGFza2FyOTBtdWh0YWRpQGdtYWlsLmNvbToxNzYwMjc4NDg3MTQzOmIwZjY3YmE2MGFmMmNkNmIxYThkOWE2ZjliMTEzYTdi",
+      "domain": "www.rokomari.com",
+      "path": "/",
+      "expires": 1760278486.549151,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "needRokxSync",
+      "value": "true",
+      "domain": "www.rokomari.com",
+      "path": "/",
+      "expires": 1728746086.549217,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_N8S2Z6QJVP",
+      "value": "GS1.1.1728742484.1.0.1728742489.55.0.0",
+      "domain": ".rokomari.com",
+      "path": "/",
+      "expires": 1763302489.554553,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.rokomari.com",
+      "localStorage": [
+        {
+          "name": "lastExternalReferrer",
+          "value": "empty"
+        },
+        {
+          "name": "lastExternalReferrerTime",
+          "value": "1728742483574"
+        }
+      ]
+    }
+  ]
+}
