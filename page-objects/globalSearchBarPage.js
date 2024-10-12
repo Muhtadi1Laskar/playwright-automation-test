@@ -12,6 +12,10 @@ export class GlobalSearchBar {
         this.searchBarLocator = this.page.locator(this.searchInputSelector);
         this.booksTagLocator = this.page.locator(this.bookTagSelector);
         this.superStoreTagLocator = this.page.locator(this.superStoreTagSelector);
+
+        // Data
+        this.bookTitle = "Kafka on the shore";
+        this.authorName = "হারুকি মুরাকামি";
     }
 
 
@@ -33,7 +37,7 @@ export class GlobalSearchBar {
     }
 
     async searchItem(name) {
-        await this.searchBarLocator.fill(name);
+        await this.searchBarLocator.type(name, {delay: 5});
     }
 
     async clickOnOption(index=4) {
