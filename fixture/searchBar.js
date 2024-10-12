@@ -43,6 +43,23 @@ export const test = base.extend({
 
         await use(invalidAuthorPage);
     },
+    addToCart: async ({ page }, use) => {
+        const addToCart = new GlobalSearchBar(page);
+
+        await addToCart.searchBarLocator.waitFor({ state: "visible" });
+        await addToCart.searchItem(addToCart.bookTitle);
+        await page.waitForTimeout(10000);
+
+        const { button } = addToCart.getSuggestionBarSelector(3);
+        await page.locator(button).click();
+        await addToCart.cartIconLocator.click();
+
+        await addToCart.bookTitleLocator.waitFor({ state: "visible" });
+
+        await use(addToCart);
+
+        await addToCart.removeFromCart();
+    }
 });
 
 export { expect };

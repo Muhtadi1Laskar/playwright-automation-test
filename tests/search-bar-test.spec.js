@@ -44,15 +44,9 @@ test.describe('Search Bar Test Suite', () => {
         }
     });
 
-    test('Check the Add button is working', async ({ searchBook, page }) => {
-        const { author, title, button } = searchBook.getSuggestionBarSelector(3);
-        await page.locator(button).click();
-        await searchBook.cartIconLocator.click();
-
-        await searchBook.bookTitleLocator.waitFor({ state: "visible" });
-
-        expect.soft(searchBook.bookTitleLocator).toContainText(searchBook.bookBanglaTitle);
-        expect.soft(searchBook.bookAuthorLocator).toContainText(searchBook.authorNameEng);
+    test('Check the Add button is working', async ({ addToCart, page }) => {
+        expect.soft(addToCart.bookTitleLocator).toContainText(addToCart.bookBanglaTitle);
+        expect.soft(addToCart.bookAuthorLocator).toContainText(addToCart.authorNameEng);
     });
     
 });

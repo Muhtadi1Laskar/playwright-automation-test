@@ -11,6 +11,8 @@ export class GlobalSearchBar {
         this.bookTitleSelector = "a[class='product-info__name']";
         this.bookAuthorSelector = "p[class='product-info__author']";
         this.cartIconSelector = { name: 'cart' };
+        this.trashIconSelector = { name: 'trash' };
+        this.yesBtnSelector = { name: 'হ্যাঁ' };
         
 
         // Locators
@@ -22,6 +24,8 @@ export class GlobalSearchBar {
         this.bookTitleLocator = this.page.locator(this.bookTitleSelector);
         this.bookAuthorLocator = this.page.locator(this.bookAuthorSelector);
         this.cartIconLocator = this.page.getByRole('link', this.cartIconSelector);
+        this.trashIconLocator = this.page.getByRole('link', this.trashIconSelector);
+        this.yesButtonLocator = this.page.getByRole('button', this.yesBtnSelector);
 
         // Data
         this.bookTitle = "Kafka on the shore";
@@ -58,5 +62,11 @@ export class GlobalSearchBar {
 
         await locator.waitFor({ state: "visible" });
         await locator.click();
+    }
+
+    async removeFromCart() {
+        await this.trashIconLocator.click();
+        await this.yesButtonLocator.waitFor({ state: "visible" });
+        await this.yesButtonLocator.click();
     }
 }
