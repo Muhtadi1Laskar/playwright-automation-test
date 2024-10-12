@@ -27,9 +27,7 @@ test.describe('Search Bar Test Suite', () => {
     });
 
     test('Check search with invalid book name', async ({ invalidBookPage, page }) => {
-        await page.pause();
-    })
-    
-    
+        expect(invalidBookPage.suggestionSpaceLocator).not.toBeVisible();
+    });
 });
 

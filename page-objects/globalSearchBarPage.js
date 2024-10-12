@@ -6,12 +6,14 @@ export class GlobalSearchBar {
         this.searchInputSelector = "//input[@id='js--search']";
         this.bookTagSelector = "//li[@data-value='BOOK']";
         this.superStoreTagSelector = "//li[@data-value='SUPER_STORE']";
+        this.searchSuggestionSelector = "//ul[contains(@class, 'search-results active')]";
         
 
         // Locators
         this.searchBarLocator = this.page.locator(this.searchInputSelector);
         this.booksTagLocator = this.page.locator(this.bookTagSelector);
         this.superStoreTagLocator = this.page.locator(this.superStoreTagSelector);
+        this.suggestionSpaceLocator = this.page.locator(this.searchSuggestionSelector);
 
         // Data
         this.bookTitle = "Kafka on the shore";
