@@ -17,6 +17,14 @@ export const test = base.extend({
 
         await use(invalidBookPage);
     },
+    invalidAuthorPage: async ({ page }, use) => {
+        const invalidAuthorPage = new GlobalSearchBar(page);
+
+        await invalidAuthorPage.searchBarLocator.waitFor({ state: "visible" });
+        await invalidAuthorPage.searchItem("INVALIAuthor23123123948858585{}{}'/.';[;");
+
+        await use(invalidAuthorPage);
+    },
 });
 
 export { expect };
