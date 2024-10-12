@@ -6,8 +6,14 @@ test.beforeEach(async ({ page }) => {
 });
 
 test.describe('Search Bar Test Suite', () => {
-    test('Search book by Name', async ({ page }) => {
-        await page.pause();
-    }); 
+    test('Check the component of the Search Bar', async ({ page }) => {
+        const search = new GlobalSearchBar(page);
+
+        await search.searchBarLocator.waitFor({ state: "visible" });
+
+        expect.soft(search.searchBarLocator).toBeVisible();
+        expect.soft(search.booksTagLocator).toBeVisible();
+        expect.soft(search.superStoreTagLocator).toBeVisible();
+    });
 });
 
