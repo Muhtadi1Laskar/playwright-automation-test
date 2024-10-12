@@ -1,8 +1,8 @@
 import { chromium } from '@playwright/test';
 
 const URL = "https://www.rokomari.com/login";
-const email = "laskar90muhtadi@gmail.com";
-const password = "foundation90";
+const email = "";
+const password = "";
 
 export default async function globalSetup() {
     const browser = await chromium.launch({ headless: false });
