@@ -8,6 +8,9 @@ export class GlobalSearchBar {
         this.superStoreTagSelector = "//li[@data-value='SUPER_STORE']";
         this.searchSuggestionSelector = "//ul[contains(@class, 'search-results active')]";
         this.searchListSelector = `${this.searchSuggestionSelector}//li`;
+        this.bookTitleSelector = "a[class='product-info__name']";
+        this.bookAuthorSelector = "p[class='product-info__author']";
+        this.cartIconSelector = { name: 'cart' };
         
 
         // Locators
@@ -16,11 +19,15 @@ export class GlobalSearchBar {
         this.superStoreTagLocator = this.page.locator(this.superStoreTagSelector);
         this.suggestionSpaceLocator = this.page.locator(this.searchSuggestionSelector);
         this.searchListLocator = this.page.locator(this.searchListSelector);
+        this.bookTitleLocator = this.page.locator(this.bookTitleSelector);
+        this.bookAuthorLocator = this.page.locator(this.bookAuthorSelector);
+        this.cartIconLocator = this.page.getByRole('link', this.cartIconSelector);
 
         // Data
         this.bookTitle = "Kafka on the shore";
         this.authorName = "হারুকি মুরাকামি";
-        this.authorNameEng = "Haruki Murakami"
+        this.authorNameEng = "Haruki Murakami";
+        this.bookBanglaTitle = "কাফকা অন দ্য শোর";
     }
 
 

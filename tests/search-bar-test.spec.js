@@ -34,7 +34,7 @@ test.describe('Search Bar Test Suite', () => {
         expect(invalidBookPage.suggestionSpaceLocator).not.toBeVisible();
     });
 
-    test.only('Check search with author name is working properly', async ({ searchAuthor, page }) => {
+    test('Check search with author name is working properly', async ({ searchAuthor, page }) => {
         const count = await searchAuthor.searchListLocator.count();
 
         for(let index = 1; index < Number(count); index++) {
@@ -43,5 +43,17 @@ test.describe('Search Bar Test Suite', () => {
             expect.soft(page.locator(author)).toBeVisible();
         }
     });
+
+    test('Check the Add button is working', async ({ searchBook, page }) => {
+        const { author, title, button } = searchBook.getSuggestionBarSelector(3);
+        await page.locator(button).click();
+        await searchBook.cartIconLocator.click();
+
+        await searchBook.bookTitleLocator.waitFor({ state: "visible" });
+
+        expect.soft(searchBook.bookTitleLocator).toContainText(searchBook.bookBanglaTitle);
+        expect.soft(searchBook.bookAuthorLocator).toContainText(searchBook.authorNameEng);
+    });
+    
 });
 
