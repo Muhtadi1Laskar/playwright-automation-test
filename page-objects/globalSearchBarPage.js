@@ -7,6 +7,7 @@ export class GlobalSearchBar {
         this.bookTagSelector = "//li[@data-value='BOOK']";
         this.superStoreTagSelector = "//li[@data-value='SUPER_STORE']";
         this.searchSuggestionSelector = "//ul[contains(@class, 'search-results active')]";
+        this.searchListSelector = `${this.searchSuggestionSelector}//li`;
         
 
         // Locators
@@ -14,10 +15,12 @@ export class GlobalSearchBar {
         this.booksTagLocator = this.page.locator(this.bookTagSelector);
         this.superStoreTagLocator = this.page.locator(this.superStoreTagSelector);
         this.suggestionSpaceLocator = this.page.locator(this.searchSuggestionSelector);
+        this.searchListLocator = this.page.locator(this.searchListSelector);
 
         // Data
         this.bookTitle = "Kafka on the shore";
         this.authorName = "হারুকি মুরাকামি";
+        this.authorNameEng = "Haruki Murakami"
     }
 
 

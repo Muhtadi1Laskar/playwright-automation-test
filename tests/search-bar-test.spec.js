@@ -6,7 +6,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test.describe('Search Bar Test Suite', () => {
-    test('Check the component of the Search Bar', async ({ searchPage, page }) => {
+    test('Check the component of the Search Bar', async ({ searchPage }) => {
         expect.soft(searchPage.searchBarLocator).toBeVisible();
         expect.soft(searchPage.booksTagLocator).toBeVisible();
         expect.soft(searchPage.superStoreTagLocator).toBeVisible();
@@ -26,12 +26,22 @@ test.describe('Search Bar Test Suite', () => {
         }
     });
 
-    test('Check search with invalid book name', async ({ invalidBookPage, page }) => {
+    test('Check search with invalid book name', async ({ invalidBookPage }) => {
         expect(invalidBookPage.suggestionSpaceLocator).not.toBeVisible();
     });
 
-    test('Check search with invalid author', async ({ invalidBookPage, page }) => {
+    test('Check search with invalid author', async ({ invalidBookPage }) => {
         expect(invalidBookPage.suggestionSpaceLocator).not.toBeVisible();
+    });
+
+    test.only('Check search with author name is working properly', async ({ searchAuthor, page }) => {
+        const count = await searchAuthor.searchListLocator.count();
+
+        for(let index = 1; index < Number(count); index++) {
+            const { author } = searchAuthor.getSuggestionBarSelector(index);
+
+            expect.soft(page.locator(author)).toBeVisible();
+        }
     });
 });
 

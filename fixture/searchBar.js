@@ -9,6 +9,15 @@ export const test = base.extend({
 
         await use(searchPage);
     },
+    searchAuthor: async ({ page }, use) => {
+        const searchAuthor = new GlobalSearchBar(page);
+
+        await searchAuthor.searchBarLocator.waitFor({ state: "visible" });
+        await searchAuthor.searchItem(`"${searchAuthor.authorNameEng}"`);
+        await page.waitForTimeout(10000);
+
+        await use(searchAuthor);
+    },
     invalidBookPage: async ({ page }, use) => {
         const invalidBookPage = new GlobalSearchBar(page);
 
