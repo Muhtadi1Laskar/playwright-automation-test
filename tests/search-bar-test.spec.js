@@ -5,7 +5,6 @@ test.beforeEach(async ({ page }) => {
     await page.goto('/');
 });
 
-
 test.describe('Search Bar Test Suite', () => {
     test('Check the component of the Search Bar', async ({ searchPage }) => {
         expect.soft(searchPage.searchBarLocator).toBeVisible();
